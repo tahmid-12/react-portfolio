@@ -3,6 +3,7 @@ import Hero from './Components/Hero'
 import Navbar from './Components/Navbar'
 import About from './Components/About'
 import Technologies from './Components/Technologies'
+import Experience from './Components/Experience'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Hero />
         <About />
         <Technologies />
+        <Experience />
       </div>
     </div>
   )
