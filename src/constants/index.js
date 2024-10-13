@@ -54,37 +54,37 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "XPress in Town Ltd.",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "A Courier site which is used by merchants to place their oprders for delivery. It also has a feature for tracking order.",
+    technologies: ["HTML", "CSS", "Vue", "PHP", "Laravel", "MySQL"],
   },
   {
-    title: "Task Management App",
+    title: "Go Paperfly",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "An application for which it is used by merchants to place their oprders for delivery. Features like the order placement system, tracking orders, invoice lists, and a dashboard includes here.",
+    technologies: ["HTML", "CSS", "React", "PHP", "MySQL"],
   },
   {
-    title: "Portfolio Website",
+    title: "Bhalogari.com",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "A site for uplaoding cars and checking it's buying history. Merchants can upload car, bikes and can query about cars.",
+    technologies: ["HTML", "CSS", "React", "Django", "Python", "Postgresql"],
   },
   {
-    title: "Blogging Platform",
+    title: "Oharagumi",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "A Japanese Construction site project",
+    technologies: ["HTML", "CSS", "Laravel", "mySQL"],
   },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "11, Bhajahari Shaha Street, Wari, Dhaka-1100",
+  phoneNo: "+8801750524097 ",
+  email: "mdtahmidchowdhury12@gmail.com",
 };
