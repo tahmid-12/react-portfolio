@@ -10,50 +10,64 @@ import { FaVuejs } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { SiDjango } from "react-icons/si";
 // import { SiNestjs } from "react-icons/si";
+import { motion } from "framer-motion"
+
+const iconVariants = (duration) => ({
+     initial: { y: -10},
+     animate:{
+          y: [10, -10],
+          transition:{
+               duration: duration,
+               ease: "linear",
+               repeat: Infinity,
+               repeatType: "reverse"
+          }
+     }
+})
 
 const Technologies = () => {
   return (
-    <div className="border-b border-neutral-800 pb-24">
+    <motion.div className="border-b border-neutral-800 pb-24">
         <h2 className="my-20 text-center text-4xl">Technologies</h2>
-        <div className="flex flex-wrap items-center justify-center gap-2">
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <motion.div className="flex flex-wrap items-center justify-center gap-2">
+            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate"  className="rounded-2xl border-4 border-neutral-800 p-4">
                  <RiReactjsLine className="text-7xl text-cyan-400"/>
-            </div>
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
+            </motion.div>
+            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
                  <TbBrandNextjs className="text-7xl"/>
-            </div>
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
+            </motion.div>
+            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
                  <SiMongodb className="text-7xl text-green-500"/>
-            </div>
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
+            </motion.div>
+            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
                  <FaNodeJs className="text-7xl text-green-500"/>
-            </div>
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
+            </motion.div>
+            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
                  <BiLogoPostgresql className="text-7xl text-sky-700"/>
-            </div>
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
+            </motion.div>
+            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
                  <DiRedis className="text-7xl text-red-700"/>
-            </div>
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
+            </motion.div>
+            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
                  <SiPhp className="text-7xl text-purple-600"/>
-            </div>
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
+            </motion.div>
+            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
                  <FaLaravel  className="text-7xl text-red-600"/>
-            </div>
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
+            </motion.div>
+            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
                  <FaVuejs className="text-7xl text-green-500"/>
-            </div>
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
+            </motion.div>
+            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
                  <FaPython className="text-7xl text-blue-500"/>
-            </div>
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
+            </motion.div>
+            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
                  <SiDjango className="text-7xl text-green-700"/>
-            </div>
-            {/* <div className="rounded-2xl border-4 border-neutral-800 p-4">
+            </motion.div>
+            {/* <motion.div className="rounded-2xl border-4 border-neutral-800 p-4">
                  <SiNestjs className="text-7xl text-red-500"/>
-            </div> */}
-        </div>
-    </div>
+            </motion.div> */}
+        </motion.div>
+    </motion.div>
   )
 }
 
